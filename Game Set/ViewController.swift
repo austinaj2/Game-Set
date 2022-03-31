@@ -66,6 +66,9 @@ class ViewController: UIViewController {
     @IBAction func playClicked(_ sender: Any) {
         if((easyTF == true || mediumTF == true || hardTF == true) && (sortTF == true || memoryTF == true || balloonsTF == true)) {
             errorLabel.text = "Nice."
+            if(memoryTF == true || easyTF == true) {
+                self.performSegue(withIdentifier: "toMemory", sender: self)
+            }
         }
         else {
             errorLabel.text = "Please select a game AND level of difficulty to continue!"

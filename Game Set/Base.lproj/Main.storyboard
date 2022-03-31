@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b5m-qy-3lY">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -17,24 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back-main" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-fA-X4I">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <rect key="frame" x="0.0" y="70" width="1024" height="698"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sorting-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Roy-xn-HQ3">
-                                <rect key="frame" x="343" y="70" width="338" height="250"/>
+                                <rect key="frame" x="343" y="120" width="338" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="338" id="FZ9-Dy-ph0"/>
                                     <constraint firstAttribute="height" constant="250" id="Fxc-n1-3wG"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon-game-logo3" translatesAutoresizingMaskIntoConstraints="NO" id="E3D-PT-hSL">
-                                <rect key="frame" x="731" y="70" width="250" height="250"/>
+                                <rect key="frame" x="731" y="120" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="6hk-WW-Mr8"/>
                                     <constraint firstAttribute="width" constant="250" id="Mhs-tQ-FLo"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RN-a0-9YC">
-                                <rect key="frame" x="343" y="70" width="338" height="250"/>
+                                <rect key="frame" x="343" y="120" width="338" height="250"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwn-5A-aAg" userLabel="Balloons Btn">
-                                <rect key="frame" x="731" y="70" width="250" height="250"/>
+                                <rect key="frame" x="731" y="120" width="250" height="250"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAF-Re-ZOk" userLabel="Memory Btn">
-                                <rect key="frame" x="43" y="70" width="250" height="250"/>
+                                <rect key="frame" x="43" y="120" width="250" height="250"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
@@ -58,35 +58,35 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memory" translatesAutoresizingMaskIntoConstraints="NO" id="Jmh-oV-Pd1">
-                                <rect key="frame" x="43" y="70" width="250" height="250"/>
+                                <rect key="frame" x="43" y="120" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="OAu-mG-1Ag"/>
                                     <constraint firstAttribute="width" constant="250" id="fCI-J6-0w2"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy" translatesAutoresizingMaskIntoConstraints="NO" id="azv-Zx-fcZ">
-                                <rect key="frame" x="274.5" y="370" width="125" height="125"/>
+                                <rect key="frame" x="274.5" y="420" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="P58-Ws-njK"/>
                                     <constraint firstAttribute="height" constant="125" id="vJG-Qu-N50"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium" translatesAutoresizingMaskIntoConstraints="NO" id="B0J-FA-iAw">
-                                <rect key="frame" x="449.5" y="370" width="125" height="125"/>
+                                <rect key="frame" x="449.5" y="420" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="NCT-6y-tHz"/>
                                     <constraint firstAttribute="height" constant="125" id="yUN-ci-gZ1"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard" translatesAutoresizingMaskIntoConstraints="NO" id="CTJ-eP-rmD">
-                                <rect key="frame" x="624.5" y="370" width="125" height="125"/>
+                                <rect key="frame" x="624.5" y="420" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" id="1vT-QP-36R"/>
                                     <constraint firstAttribute="height" constant="125" id="7PE-Ia-ZMw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvf-z9-NsZ">
-                                <rect key="frame" x="449.5" y="370" width="125" height="125"/>
+                                <rect key="frame" x="449.5" y="420" width="125" height="125"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Medium">
                                     <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0j-8I-WWR">
-                                <rect key="frame" x="274.5" y="370" width="125" height="125"/>
+                                <rect key="frame" x="274.5" y="420" width="125" height="125"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Easy">
                                     <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUn-Z6-hPi">
-                                <rect key="frame" x="624.5" y="370" width="125" height="125"/>
+                                <rect key="frame" x="624.5" y="420" width="125" height="125"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Hard">
                                     <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
@@ -116,7 +116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj9-jp-ABc">
-                                <rect key="frame" x="392" y="545" width="240" height="120"/>
+                                <rect key="frame" x="392" y="595" width="240" height="120"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
@@ -124,7 +124,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFs-6q-97E">
-                                <rect key="frame" x="50" y="695" width="924" height="40"/>
+                                <rect key="frame" x="50" y="720" width="924" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ADy-cy-wOJ"/>
                                 </constraints>
@@ -133,7 +133,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlayButton" translatesAutoresizingMaskIntoConstraints="NO" id="qUV-Vu-IBM">
-                                <rect key="frame" x="392" y="545" width="240" height="120"/>
+                                <rect key="frame" x="392" y="595" width="240" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="V6V-Xd-P6W"/>
                                     <constraint firstAttribute="width" constant="240" id="vEk-xw-WUq"/>
@@ -186,7 +186,7 @@
                             <constraint firstItem="bvf-z9-NsZ" firstAttribute="leading" secondItem="B0J-FA-iAw" secondAttribute="leading" id="eoV-r9-iNQ"/>
                             <constraint firstItem="CTJ-eP-rmD" firstAttribute="bottom" secondItem="bvf-z9-NsZ" secondAttribute="bottom" id="fOl-bG-Jd3"/>
                             <constraint firstItem="qUV-Vu-IBM" firstAttribute="top" secondItem="bvf-z9-NsZ" secondAttribute="bottom" constant="50" id="g4t-Ql-3fV"/>
-                            <constraint firstItem="aFs-6q-97E" firstAttribute="top" secondItem="qUV-Vu-IBM" secondAttribute="bottom" constant="30" id="hVI-gQ-cy0"/>
+                            <constraint firstItem="aFs-6q-97E" firstAttribute="top" secondItem="qUV-Vu-IBM" secondAttribute="bottom" constant="5" id="hVI-gQ-cy0"/>
                             <constraint firstItem="B0J-FA-iAw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="krA-gU-2wr"/>
                             <constraint firstItem="xAF-Re-ZOk" firstAttribute="bottom" secondItem="Jmh-oV-Pd1" secondAttribute="bottom" id="lGv-7c-dU4"/>
                             <constraint firstItem="Roy-xn-HQ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lVY-kU-Faz"/>
@@ -199,17 +199,53 @@
                             <constraint firstItem="pwn-5A-aAg" firstAttribute="bottom" secondItem="E3D-PT-hSL" secondAttribute="bottom" id="z3C-4o-9sY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0NK-Ct-8Ah"/>
                     <connections>
                         <outlet property="balloonsBtn" destination="pwn-5A-aAg" id="TEP-qI-FU2"/>
                         <outlet property="errorLabel" destination="aFs-6q-97E" id="qDW-pb-yTT"/>
                         <outlet property="memoryBtn" destination="xAF-Re-ZOk" id="awH-Tw-BDu"/>
                         <outlet property="playBtn" destination="pj9-jp-ABc" id="r13-SX-1KR"/>
                         <outlet property="sortBtn" destination="3RN-a0-9YC" id="Zb2-0r-7uu"/>
+                        <segue destination="vxG-G9-TAq" kind="show" identifier="toMemory" id="Xew-g2-cQb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.821428571428569" y="78.260869565217391"/>
+            <point key="canvasLocation" x="758.7890625" y="78.125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SI0-ZL-tIy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b5m-qy-3lY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ox2-bZ-n7N">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X8f-su-n3v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8H-OG-Qct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.5703125" y="78.125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Umv-JQ-XTR">
+            <objects>
+                <viewController id="vxG-G9-TAq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pQh-Xp-oWT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fU9-P3-UJu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2pV-Ff-jeO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnP-U2-oyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-607"/>
         </scene>
     </scenes>
     <resources>
