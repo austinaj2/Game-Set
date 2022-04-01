@@ -11,7 +11,7 @@ class MemoryController: UIViewController {
     
     let outView = UIView(frame: CGRect(x: 100, y: 150, width: 825, height: 600))
     let v = UIImageView(image: UIImage(named: "question"))
-    var images = [UIImageView]()
+    var questions = [UIButton]()
     var easy = Bool()
     var medium = Bool()
     var hard = Bool()
@@ -42,33 +42,38 @@ class MemoryController: UIViewController {
         var newY = 0.0
         var newX = start
         for i in 0..<columns {
-            let v = UIImageView(image: UIImage(named: "question"))
-            v.frame = CGRect(x: newX, y: newY, width: size, height: size)
-            let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
-            button.tag = images.count
-            print(images.count)
-            v.addSubview(button)
-            images.append(v)
+            let btn = UIButton(frame: CGRect(x: newX, y: newY, width: size, height: size))
+            btn.setBackgroundImage(UIImage(named: "question"), for: .normal)
+//            let v = UIImageView(image: UIImage(named: "question"))
+//            v.frame = CGRect(x: newX, y: newY, width: size, height: size)
+//            let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
+//            button.tag = images.count
+//            print(images.count)
+//            v.addSubview(button)
+            questions.append(btn)
             for l in 0..<rows {
-                let v = UIImageView(image: UIImage(named: "question"))
-                v.frame = CGRect(x: newX, y: newY, width: size, height: size)
-                let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
-                button.tag = images.count
-                button.addTarget(self, action: #selector(questionClicked), for: .touchUpInside)
-                print(images.count)
-                v.addSubview(button)
-                images.append(v)
+                let btn = UIButton(frame: CGRect(x: newX, y: newY, width: size, height: size))
+                btn.setBackgroundImage(UIImage(named: "question"), for: .normal)
+//                let v = UIImageView(image: UIImage(named: "question"))
+//                v.frame = CGRect(x: newX, y: newY, width: size, height: size)
+//                let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
+//                button.tag = images.count
+//                button.addTarget(self, action: #selector(questionClicked), for: .touchUpInside)
+//                print(images.count)
+//                v.addSubview(button)
+//                images.append(v)
+                questions.append(btn)
                 newX += size
             }
             newY += size
             newX = start
         }
-        for j in 0..<images.count {
-            outView.addSubview(images[j])
+        for j in 0..<questions.count {
+            outView.addSubview(questions[j])
             
         }
-        for i in images {
-            print(i.subviews[0])
+        for i in questions {
+            print(i)
         }
     }
     @objc func questionClicked(sender: UIButton) {
