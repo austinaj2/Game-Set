@@ -32,7 +32,7 @@ class MemoryController: UIViewController {
             stackedGrid(rows: 4, columns: 4, start: 100, size: 150)
         }
         if(hard == true) {
-            stackedGrid(rows: 5, columns: 4, start: 50, size: 150)
+            stackedGrid(rows: 5, columns: 4, start: 40, size: 150)
         }
         
         // Do any additional setup after loading the view.
@@ -44,26 +44,17 @@ class MemoryController: UIViewController {
         for i in 0..<columns {
             let btn = UIButton(frame: CGRect(x: newX, y: newY, width: size, height: size))
             btn.setBackgroundImage(UIImage(named: "question"), for: .normal)
-//            let v = UIImageView(image: UIImage(named: "question"))
-//            v.frame = CGRect(x: newX, y: newY, width: size, height: size)
-//            let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
-//            button.tag = images.count
-//            print(images.count)
-//            v.addSubview(button)
             questions.append(btn)
-            for l in 0..<rows {
+//            btn.tag = questions.count
+            print(questions.count)
+            
+            for l in 0..<rows-1 {
+                newX += size
                 let btn = UIButton(frame: CGRect(x: newX, y: newY, width: size, height: size))
                 btn.setBackgroundImage(UIImage(named: "question"), for: .normal)
-//                let v = UIImageView(image: UIImage(named: "question"))
-//                v.frame = CGRect(x: newX, y: newY, width: size, height: size)
-//                let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
-//                button.tag = images.count
-//                button.addTarget(self, action: #selector(questionClicked), for: .touchUpInside)
-//                print(images.count)
-//                v.addSubview(button)
-//                images.append(v)
+//                btn.tag = questions.count
+                print(questions.count)
                 questions.append(btn)
-                newX += size
             }
             newY += size
             newX = start
@@ -72,12 +63,27 @@ class MemoryController: UIViewController {
             outView.addSubview(questions[j])
             
         }
-        for i in questions {
-            print(i)
+        var count = 1
+        secondImageView()
+        for i in 0..<questions.count {
+            questions[i].tag = count
+            questions[i].addTarget(self, action: #selector(questionClicked), for: .touchUpInside)
+            count+=1
         }
     }
     @objc func questionClicked(sender: UIButton) {
         print("Clicked \(sender.tag)")
+        print(questions[sender.tag-1])
+        questions[sender.tag-1].subviews[0].alpha = 1.0        
+    }
+    
+    func secondImageView() {
+        for i in questions {
+            let imgBtn = UIButton(frame: i.frame)
+            imgBtn.setBackgroundImage(UIImage(named: "1"), for: .normal)
+            imgBtn.alpha = 0.0
+            i.addSubview(imgBtn)
+        }
     }
     
 
