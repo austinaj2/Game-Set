@@ -199,7 +199,9 @@
                             <constraint firstItem="pwn-5A-aAg" firstAttribute="bottom" secondItem="E3D-PT-hSL" secondAttribute="bottom" id="z3C-4o-9sY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0NK-Ct-8Ah"/>
+                    <navigationItem key="navigationItem" id="0NK-Ct-8Ah">
+                        <barButtonItem key="rightBarButtonItem" title="High Scores" id="SGq-5O-aeC"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="balloonsBtn" destination="pwn-5A-aAg" id="TEP-qI-FU2"/>
                         <outlet property="errorLabel" destination="aFs-6q-97E" id="qDW-pb-yTT"/>
@@ -231,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="34.5703125" y="78.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Memory Controller-->
         <scene sceneID="Umv-JQ-XTR">
             <objects>
-                <viewController id="vxG-G9-TAq" sceneMemberID="viewController">
+                <viewController id="vxG-G9-TAq" customClass="MemoryController" customModule="Game_Set" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pQh-Xp-oWT">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
