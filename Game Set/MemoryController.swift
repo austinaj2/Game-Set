@@ -47,9 +47,7 @@ class MemoryController: UIViewController {
             let button = UIButton(frame: CGRect(origin: v.bounds.origin, size: CGSize(width: v.frame.width, height: v.frame.height)))
             button.tag = images.count
             print(images.count)
-            button.addTarget(self, action: #selector(questionClicked), for: .touchUpInside)
-            v.insertSubview(button, aboveSubview: v)
-            button.backgroundColor = UIColor.red
+            v.addSubview(button)
             images.append(v)
             for l in 0..<rows {
                 let v = UIImageView(image: UIImage(named: "question"))
@@ -58,7 +56,7 @@ class MemoryController: UIViewController {
                 button.tag = images.count
                 button.addTarget(self, action: #selector(questionClicked), for: .touchUpInside)
                 print(images.count)
-                v.insertSubview(button, aboveSubview: v)
+                v.addSubview(button)
                 images.append(v)
                 newX += size
             }
@@ -67,6 +65,7 @@ class MemoryController: UIViewController {
         }
         for j in 0..<images.count {
             outView.addSubview(images[j])
+            
         }
         for i in images {
             print(i.subviews[0])
