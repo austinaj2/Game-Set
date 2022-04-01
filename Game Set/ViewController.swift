@@ -69,9 +69,24 @@ class ViewController: UIViewController {
             if(memoryTF == true || easyTF == true) {
                 self.performSegue(withIdentifier: "toMemory", sender: self)
             }
+            easyTF = false
+            mediumTF = false
+            hardTF = false
+            sortTF = false
+            memoryTF = false
+            balloonsTF = false
         }
         else {
             errorLabel.text = "Please select a game AND level of difficulty to continue!"
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toMemory" {
+            if let nextVC = segue.destination as? MemoryController {
+                nextVC.easy = easyTF
+                nextVC.medium = mediumTF
+                nextVC.hard = hardTF
+            }
         }
     }
 }
