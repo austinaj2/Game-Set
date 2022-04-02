@@ -66,8 +66,11 @@ class ViewController: UIViewController {
     @IBAction func playClicked(_ sender: Any) {
         if((easyTF == true || mediumTF == true || hardTF == true) && (sortTF == true || memoryTF == true || balloonsTF == true)) {
             errorLabel.text = "Nice."
-            if(memoryTF == true || easyTF == true) {
+            if(memoryTF == true && easyTF == true || memoryTF == true && hardTF == true || memoryTF == true && mediumTF == true) {
                 self.performSegue(withIdentifier: "toMemory", sender: self)
+            }
+            if(balloonsTF == true && easyTF == true || balloonsTF == true && hardTF == true || balloonsTF == true && mediumTF == true) {
+                self.performSegue(withIdentifier: "toBalloons", sender: self)
             }
             easyTF = false
             mediumTF = false
@@ -83,6 +86,13 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toMemory" {
             if let nextVC = segue.destination as? MemoryController {
+                nextVC.easy = easyTF
+                nextVC.medium = mediumTF
+                nextVC.hard = hardTF
+            }
+        }
+        if segue.identifier == "toBalloons" {
+            if let nextVC = segue.destination as? BalloonsController {
                 nextVC.easy = easyTF
                 nextVC.medium = mediumTF
                 nextVC.hard = hardTF

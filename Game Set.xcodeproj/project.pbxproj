@@ -17,6 +17,7 @@
 		916DAD5D27F61E2E00505128 /* Game_SetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DAD5C27F61E2E00505128 /* Game_SetUITests.swift */; };
 		916DAD5F27F61E2E00505128 /* Game_SetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DAD5E27F61E2E00505128 /* Game_SetUITestsLaunchTests.swift */; };
 		916DADA827F69F2C00505128 /* MemoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DADA727F69F2C00505128 /* MemoryController.swift */; };
+		91A1198827F809AA00845448 /* BalloonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A1198727F809AA00845448 /* BalloonsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		916DAD5C27F61E2E00505128 /* Game_SetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_SetUITests.swift; sourceTree = "<group>"; };
 		916DAD5E27F61E2E00505128 /* Game_SetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_SetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		916DADA727F69F2C00505128 /* MemoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryController.swift; sourceTree = "<group>"; };
+		91A1198727F809AA00845448 /* BalloonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				916DAD3B27F61E2B00505128 /* AppDelegate.swift */,
 				916DAD3D27F61E2B00505128 /* SceneDelegate.swift */,
 				916DADA727F69F2C00505128 /* MemoryController.swift */,
+				91A1198727F809AA00845448 /* BalloonsController.swift */,
 				916DAD3F27F61E2B00505128 /* ViewController.swift */,
 				916DAD4127F61E2B00505128 /* Main.storyboard */,
 				916DAD4427F61E2E00505128 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			files = (
 				916DAD4027F61E2B00505128 /* ViewController.swift in Sources */,
 				916DAD3C27F61E2B00505128 /* AppDelegate.swift in Sources */,
+				91A1198827F809AA00845448 /* BalloonsController.swift in Sources */,
 				916DADA827F69F2C00505128 /* MemoryController.swift in Sources */,
 				916DAD3E27F61E2B00505128 /* SceneDelegate.swift in Sources */,
 			);
