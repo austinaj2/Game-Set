@@ -226,11 +226,40 @@
                         <outlet property="sortBtn" destination="3RN-a0-9YC" id="Zb2-0r-7uu"/>
                         <segue destination="vxG-G9-TAq" kind="show" identifier="toMemory" id="Xew-g2-cQb"/>
                         <segue destination="zrm-UG-ej1" kind="show" identifier="toBalloons" id="hSR-Y3-ORA"/>
+                        <segue destination="kaN-Ae-54K" kind="showDetail" id="vhi-NV-Ba5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="758.7890625" y="78.125"/>
+        </scene>
+        <!--ScoresTVC-->
+        <scene sceneID="RiG-qH-PcF">
+            <objects>
+                <tableViewController storyboardIdentifier="toScores" id="kaN-Ae-54K" customClass="ScoresTVC" customModule="Game_Set" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Fqt-eY-EK7">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="728"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="toScores" id="BBY-77-5vH">
+                                <rect key="frame" x="0.0" y="44.5" width="704" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BBY-77-5vH" id="UBN-kw-tth">
+                                    <rect key="frame" x="0.0" y="0.0" width="704" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kaN-Ae-54K" id="Ke7-30-x8h"/>
+                            <outlet property="delegate" destination="kaN-Ae-54K" id="nUk-0b-lBh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rA-N6-FO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="784"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SI0-ZL-tIy">

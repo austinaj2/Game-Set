@@ -35,7 +35,7 @@ class MemoryController: UIViewController {
         super.viewDidLoad()
         self.view.addSubview(outView)
         if(easy == true) {
-            timeCount = 120
+            timeCount = 5
             stackedGrid(rows: 4, columns: 3, start: 70, size: 175, pairs: 6)
         }
         if(medium == true) {
@@ -48,7 +48,7 @@ class MemoryController: UIViewController {
         }
     
         
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading tnhe view.
     }
     
     func timeFormatter(secs: Int) -> (Int, Int) {
@@ -81,7 +81,7 @@ class MemoryController: UIViewController {
             timeLabel.backgroundColor = .red
             let alert = UIAlertController(title: "GAME OVER!", message: "Sorry, time's up! Would you like to try again?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
-                self.timer.invalidate()
+                self.timeCount = 1
                 self.navigationController?.popViewController(animated: true)
             }))
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
@@ -220,6 +220,21 @@ class MemoryController: UIViewController {
         }
         if all == true {
             print("DONE!")
+            var score = Int()
+            if easy == true {
+                score = 120-timeCount
+            }
+            if medium == true {
+                score = 105-timeCount
+            }
+            if hard == true {
+                score = 90-timeCount
+            }
+            let form = timeFormatter(secs: score)
+            let timeString = timeStringFormatter(formatted: form)
+            let realScore = timeString
+            print(realScore)
+//            allScores.append(Score(date: Date(), label: realScore))
             let alert = UIAlertController(title: "Congratulations!", message: "You won! Do you want to play again?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
                 print("Purchase cancelled.")

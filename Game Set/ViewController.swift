@@ -20,10 +20,31 @@ class ViewController: UIViewController {
     var easyTF = false
     var mediumTF = false
     var hardTF = false
+    var count = 0
+    var allScores = [Score]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        count = UserDefaults.standard.integer(forKey: "count")
+        if let scoreData = UserDefaults.standard.object(forKey: "scoreData") as? Data {
+            allScores = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(scoreData) as! [Score]
+            updateList()
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func updateList() {
+        updateDatabase()
+    }
+    
+    func updateDatabase(){
+        
+        //first convert to Data then save
+        if let dataToSave = try? NSKeyedArchiver.archivedData(withRootObject: allScores, requiringSecureCoding: false)
+        {
+            UserDefaults.standard.set(dataToSave, forKey: "scoreData")
+        }
+        
     }
     
     @IBAction func sortClicked(_ sender: Any) {
@@ -89,6 +110,14 @@ class ViewController: UIViewController {
                 nextVC.easy = easyTF
                 nextVC.medium = mediumTF
                 nextVC.hard = hardTF
+            }
+        }
+        if segue.identifier == "toBalloons" {
+            if let nextVC = segue.destination as? BalloonsController {
+                nextVC.easy = easyTF
+                nextVC.medium = mediumTF
+                nextVC.hard = hardTF
+                
             }
         }
         if segue.identifier == "toBalloons" {
